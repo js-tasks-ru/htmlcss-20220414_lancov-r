@@ -6,14 +6,16 @@ body {
 header {
   text-align: center;
   margin: 0px;
+  font-size: 25px;
 }
 header h1 {
+  font-size: em;
   background-color: rgba(209, 5, 5, 0.337);
   margin: 0px;
 }
 header nav {
   background-color: rgba(210, 105, 30, 0.907);
-  padding: 1%;
+  padding: 10px;
 }
 header nav a {
   padding: 10px;
@@ -27,8 +29,29 @@ header nav a:visited {
 header nav a:hover {
   color: rgb(230, 220, 210);
 }
-main {background-color: rgba(0, 255, 255, 0.69); padding: 0%; margin: 0%;}
+
+main {
+  background-color: rgba(0, 197, 82, 0.52);
+  padding: 5px;
+}
+
 article {
-  background-color: rgba(1, 88, 169, 0.323);
+  background-color: rgba(0, 56, 211, 0.678);
+  margin: 5px;
+  padding-bottom: 25px;
+}
+article * {
   margin: 0px;
+}
+
+article h2 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+}
+
+footer {
+  background-color: rgba(137, 43, 226, 0.561);
+  font-size: 3em;
+  text-align: center;
 }
