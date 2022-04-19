@@ -1,0 +1,19 @@
+.header{
+    background-color: #ffff;
+    padding: 96px 0 77px;
+}
+.header__inner{
+    max-width: 1110px;
+    margin: 0 auto;
+
+}
+.header__title{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 64px;
+    color: #212429;
+    margin: 0px;
+
+}
