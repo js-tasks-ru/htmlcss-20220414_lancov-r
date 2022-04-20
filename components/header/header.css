@@ -1,6 +1,6 @@
 .header{
     background-color: #ffff; 
-    padding: 96px 0 77px;
+    padding: 25px 0 77px;
 }
  
 .header__title{
@@ -11,5 +11,39 @@
     line-height: 64px;
     color: #212429;
     margin: 0px;
+    /* padding-bottom: 77px; */
+
+}
+
+.header_logo{
+    margin: 0px;
+    padding-bottom: 41px;
+}
+
+.header_triangle{
+	width: 0;
+	height: 0;
+	border-bottom: 30px solid #000; 
+	border-right: 30px solid transparent;	
+    display: inline-block;
+
+}
+
+.header_square{
+        width: 30px;
+        height: 30px;
+        background: #000;
+        display: inline-block;
+
+  }
+
+  .header_circle{
+    width: 30px;
+    height: 30px;
+    background: #000;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    display: inline-block;
 
 }
