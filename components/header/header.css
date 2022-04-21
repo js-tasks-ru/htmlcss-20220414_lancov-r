@@ -1,6 +1,6 @@
 .header{
     background-color: var(--white); 
-    padding: 0px 0 77px;
+    padding: 25px 0 77px;
     color: var(--black);
 }
  
@@ -11,17 +11,17 @@
     font-size: 50px;
     line-height: 64px;
     margin: 0px;
-
+    padding-top: 40px;
 }
 
 .header__logo{
     margin: 0px;
-    padding-left: 3px; 
-    padding-top: 25px;
-    padding-bottom: 40px;
+    /* padding-left: 3px;  */
+    /* padding-top: 25px; */
+    /* padding-bottom: 40px; */
 }
 
-.header__triangle{
+.header__logo-triangle{
 	width: 0;
 	height: 0;
 	border-bottom: 30px solid var(--black); 
@@ -30,7 +30,7 @@
 
 }
 
-.header__square{
+.header__logo-square{
         width: 30px;
         height: 30px;
         background: var(--black);
@@ -38,7 +38,7 @@
 
   }
 
-  .header__circle{
+  .header__logo-circle{
     width: 30px;
     height: 30px;
     background: var(--black);
