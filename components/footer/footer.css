@@ -1,7 +1,8 @@
 .footer{
-    background: #FFFFFF;
+    background:  var(--white);
     height: 200px;
     text-align: center;
+    color: var(--black);
  }
 
 .footer__text{
@@ -13,10 +14,9 @@
     max-width: 640px;
     margin-left: auto;
     margin-right: auto;
-
+    
 }
 .footer__title{
-    /* font-family: Inter; */
     font-size: 38px;
     font-weight: 500;
     line-height: 48px;

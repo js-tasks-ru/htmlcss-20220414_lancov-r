@@ -1,6 +1,7 @@
 .header{
-    background-color: #ffff; 
-    padding: 25px 0 77px;
+    background-color: var(--white); 
+    padding: 0px 0 77px;
+    color: var(--black);
 }
  
 .header__title{
@@ -9,21 +10,21 @@
     font-weight: 500;
     font-size: 50px;
     line-height: 64px;
-    color: #212429;
     margin: 0px;
-    /* padding-bottom: 77px; */
 
 }
 
 .header_logo{
     margin: 0px;
-    padding-bottom: 41px;
+    padding-left: 3px; 
+    padding-top: 25px;
+    padding-bottom: 40px;
 }
 
 .header_triangle{
 	width: 0;
 	height: 0;
-	border-bottom: 30px solid #000; 
+	border-bottom: 30px solid var(--black); 
 	border-right: 30px solid transparent;	
     display: inline-block;
 
@@ -32,7 +33,7 @@
 .header_square{
         width: 30px;
         height: 30px;
-        background: #000;
+        background: var(--black);
         display: inline-block;
 
   }
@@ -40,7 +41,7 @@
   .header_circle{
     width: 30px;
     height: 30px;
-    background: #000;
+    background: var(--black);
     -moz-border-radius: 50px;
     -webkit-border-radius: 50px;
     border-radius: 50px;
