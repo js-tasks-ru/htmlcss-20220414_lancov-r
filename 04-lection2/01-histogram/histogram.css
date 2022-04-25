@@ -1,18 +1,17 @@
 .histogram {
 
-     display: flex;
+    display: flex;
     flex-direction: column;
     margin: 16px 24px 24px 24px ;
 
-    height: 100%;
-     border-radius: 8px;
+    height: 300px;
+    border-radius: 8px;
 
 
 }
 .histogram__header { 
     display: flex;
-    flex-grow: 1;
-    background-color: aqua;
+     background-color: aqua;
 }
 .histogram__header-left {
     flex-grow: 2;
@@ -62,11 +61,11 @@
     background-color: brown;
     display: flex;
     gap: 1px;
-    flex: 1 1 auto ;
-
+    flex-grow: 1;
+    ;
 }
 .histogram_chart-bar {
     background-color: blue;
-     flex-grow: 1;
     flex: 1 1 auto ;
+    height: 1px;
 }
