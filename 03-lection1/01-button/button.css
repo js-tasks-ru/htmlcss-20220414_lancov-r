@@ -16,11 +16,14 @@
     /* identical to box height */
 
     text-align: center;
+
  }
 
 .button__primary {
    background-color: #4263EB; 
    color: var(--white);
+   transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
+
 }
 
 .button__primary:hover {
@@ -31,6 +34,8 @@
 .button__secondary {
     background-color: #7048E8; 
     color: var(--white);
+    transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
+
 }
 .button__secondary:hover {
     background-color: #5028C6; 
@@ -43,6 +48,8 @@
     border: 1px solid #ACB5BD;
     box-sizing: border-box;
     border-radius: 8px;
+    transition: opacity 200ms ease-in-out, border 200ms ease-in-out;
+
 }
 .button__alternate:hover {
     border: 1px solid #212429;
