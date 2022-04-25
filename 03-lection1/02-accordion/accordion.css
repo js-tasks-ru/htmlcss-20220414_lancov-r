@@ -1,1 +1,19 @@
 /* Стилизация аккордеона */
+.accordion {
+  
+font-family: Inter;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+.accordion__section {
+}
+.accordion__summary {
+    color: #212429;
+}
+.accordion__text {
+    color: #495057;
+}
