@@ -2,24 +2,24 @@
 
     display: flex;
     flex-direction: column;
-    margin: 16px 24px 24px 24px ;
+    padding: 16px 24px 24px 24px ;
 
-    height: 300px;
+    height: 185px;
     border-radius: 8px;
-
-
+    
+    border: 1px solid #ACB5BD
 }
 .histogram__header { 
     display: flex;
-     background-color: aqua;
 }
 .histogram__header-left {
-    flex-grow: 2;
-    background-color: aquamarine;
-
+    flex: 1 2 auto ;
 }
 .histogram__p {
      
+    height: 24px;
+    /* width: 200px; */
+
     font-family: Inter;
     font-size: 16px;
     font-weight: 400;
@@ -30,6 +30,7 @@
     color: #212429;
     opacity: 0.8;
     margin: 0px ;
+
 }
 
 .histogram__h4 {
@@ -45,27 +46,27 @@
 
 }
 .histogram__header-right {
-    flex-grow: 1;
+    flex: 1 1 auto ;
     text-align: right;
 }
 .filter {
-     font-family: Inter;
+    font-family: Inter;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0em;
-    text-align: right;
-    
+    color:     #4263EB;
+    margin: 3px 0px 0px;
 }
 .histogram__chart {
-    background-color: brown;
-    display: flex;
+     display: flex;
     gap: 1px;
-    flex-grow: 1;
-    ;
+    flex: 1 1 auto ;
+    align-items: flex-end;
+    margin-top: 40px;
 }
 .histogram_chart-bar {
-    background-color: blue;
+    background-color: #4263EB;
     flex: 1 1 auto ;
     height: 1px;
 }
