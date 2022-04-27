@@ -1,4 +1,11 @@
 @import '../fonts/fonts.css';
+@import './normalize.css';
+@import '../../components/header/header.css';
+@import '../../components/preview/preview.css';
+@import '../../components/footer/footer.css';
+@import '../../components/page/page.css';
+@import '../../components/container/container.css';
+@import '../../components/card/card.css';
 
 :root {
     --white: #ffffff;
@@ -19,6 +26,10 @@
     --secondary: var(--purple);
 }
 
-body {
+html,body{
+    height: 100%;
+}
+
+* {
     font-family: 'Roboto', sans-serif;
 }
