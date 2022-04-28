@@ -44,7 +44,8 @@
   border-radius: 8px;
   background-color: var(--white);
   transform: translate(-50%, -50%);
-  position: absolute;
+  position: fixed;
+  z-index: 1;
 }
 
 .modal__main-cross {
