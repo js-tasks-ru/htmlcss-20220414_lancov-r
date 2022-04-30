@@ -1,66 +1,53 @@
 <!DOCTYPE html>
 <!-- Главная страница -->
 <html lang="ru">
+  <head>
+    <link rel="stylesheet" href="../components/template/template.css  " />
+  </head>
 
-<head>
-    <link rel="stylesheet" href="../assets/css/main.css">
-</head>
-
-<body>
+  <body>
     <div class="template">
-        <header class="header">
-            <div class="header__logo">
-                <div class="header__logo-square"></div>
-                <div class="header__logo-circle"></div>
-                <div class="header__logo-triangle"></div>
-            </div>
-         </header>
-
-         <nav class="template__menu"> 
-            <section class="template__menu-section">
-                <h4 class="template__menu-h4">Elements</h4>
-                <ul class="template__menu-ul">
-                    <li><a href="" class="template__menu-a">Avatar</a></li>
-                    <li><a href="" class="template__menu-a">Custom form elements</a></li>
-                    <li><a href="" class="template__menu-a">Button</a></li>
-                    <li><a href="" class="template__menu-a">Avatar</a></li>
-                    <li><a href="" class="template__menu-a">Custom form elements</a></li>
-                    <li><a href="" class="template__menu-a">Button</a></li>
-                </ul>
-            </section> 
-            <section class="menu_section">
-                <h4 class="menu__h4">Elements</h4>
-                <ul class="menu__ul">
-                    <li><a href="" class="menu__a">Avatar</a></li>
-                    <li><a href="" class="menu__a">Custom form elements</a></li>
-                    <li><a href="" class="menu__a">Button</a></li>
-                    <li><a href="" class="menu__a">Avatar</a></li>
-                    <li><a href="" class="menu__a">Custom form elements</a></li>
-                    <li><a href="" class="menu__a">Button</a></li>
-                </ul>
-            </section> 
-            <section class="menu_section">
-                <h4 class="menu__h4">Elements</h4>
-                <ul class="menu__ul">
-                    <li><a href="" class="menu__a">Avatar</a></li>
-                    <li><a href="" class="menu__a">Custom form elements</a></li>
-                    <li><a href="" class="menu__a">Button</a></li>
-                    <li><a href="" class="menu__a">Avatar</a></li>
-                    <li><a href="" class="menu__a">Custom form elements</a></li>
-                    <li><a href="" class="menu__a">Button</a></li>
-                </ul>
-            </section> 
-        </nav>
-
-        <main class=" main">
-            <div class="main__view"></div>
-        </main>
-
-        <footer class="footer">
-            <div>Reusable component library</div>
-        </footer>
-
+      <header class="header__upper-nav header__upper-nav_inner">
+           <div class="header__logo">
+            <div class="header__logo-square"></div>
+            <div class="header__logo-circle"></div>
+            <div class="header__logo-triangle"></div>
+          </div>
+          <div class="header__nav">
+            <div>Components</div>
+            <div>About</div>
+            <div>Contact</div>
+            <svg class="icon">
+                <use href="/assets/icons/sprite.svg#day"></use>        
+           </svg>
+            <svg class="icon">
+                <use href="/assets/icons/sprite.svg#night"></use>        
+           </svg>
+             
     </div>
-</body>
+       </header>
 
+      <aside class="menu">
+        <section class="menu__section">
+          <h4 class="menu__title">Elements</h4>
+          <ul class="menu__list">
+            <li>Avatar</li>
+            <li>Custom form elements</li>
+            <li>Button</li>
+            <li>Avatar</li>
+            <li>Custom form elements</li>
+            <li>Button</li>
+          </ul>
+        </section>
+      </aside>
+
+      <main class="main">
+        <!-- <div class="main__view">s</div> -->
+      </main>
+
+      <footer class="footer">
+        <div>REUSABLE COMPONENT LIBRARY</div>
+      </footer>
+    </div>
+  </body>
 </html>

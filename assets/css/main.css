@@ -6,7 +6,6 @@
 @import '../../components/page/page.css';
 @import '../../components/container/container.css';
 @import '../../components/card/card.css';
-@import '../../components/template/template.css';
 
 :root {
     --white: #ffffff;
@@ -31,6 +30,12 @@ html,body{
     height: 100%;
 }
 
-* {
+.icon{
+    width: 24px;
+    height: 24px;
+}
+
+
+body {
     font-family: 'Roboto', sans-serif;
 }
