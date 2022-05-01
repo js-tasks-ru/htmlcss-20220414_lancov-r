@@ -1,17 +1,30 @@
-.preview{
-    background: #F9FAFC;
-    /* height: 1036px; */
-
+.preview {
+  background: #f9fafc;
 }
 
-.preview__inner{
-   margin: 68px 0 204px;
-   display: flex;
-   flex-wrap: wrap;
-   gap: 30px;
- }
+.preview__inner {
+  padding: 68px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;  	 
 
-.preview__inner-card{
-    flex: 350px 0 0;
-    height: 367px ; 
+  gap: 30px;
+}
+
+.preview__inner-card {
+  flex: 350px 0 0;
+  height: 367px;
+}
+
+@media screen and (max-width: 768px) {
+  .preview__inner {
+    padding: 24px 0;
+    gap: 16px;
+  }
+
+  .preview__inner-card {
+    flex: 164px 0 0;
+    height: 231px;
+    padding: 24px 0;
+  }
 }
