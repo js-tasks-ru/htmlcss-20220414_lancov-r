@@ -1,7 +1,6 @@
 .tooltip {
   display: inline-block;
   position: relative;
-  height: 24px;
 }
 .tooltip__ico {
   cursor: pointer;
@@ -13,14 +12,14 @@
   padding: 13px 21px 8px 21px;
   height: 24px;
   border-radius: 10px;
-  background: #212429;
+  background: var(--black);
 
   font-family: Inter;
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 0em;
   text-align: center;
-  color: #dde2e5;
+  color: var(--grey-2);
   box-shadow: 0px 2px 4px 0px #2124290d;
   white-space: nowrap;
 
@@ -42,7 +41,7 @@
     width: 0;
     height: 0;
     border: 15px solid transparent; 
-    border-bottom: 16px solid #212429;
+    border-bottom: 16px solid var(--black);
     position: absolute;
     bottom: 100%;
     left: 50%;
