@@ -6,6 +6,7 @@
 @import '../../components/page/page.css';
 @import '../../components/container/container.css';
 
+
 :root {
     --white: #ffffff;
     --black: #212429;
@@ -25,10 +26,11 @@
     --secondary: var(--purple);
 }
 
+
+
 html,body{
     height: 100%;
 }
-
 
 body {
     font-family: 'Roboto', sans-serif;
