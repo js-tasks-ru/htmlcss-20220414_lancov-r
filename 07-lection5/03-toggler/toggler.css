@@ -1,50 +1,74 @@
 .toggle {
-    position: relative;
-  }
-  
-  .toggle__input {
-    position: absolute;
-    clip: rect(0, 0, 0, 0);
-  }
-  
-  .toggle__input:checked ~ .toggle__state .toggle__control {
-    background-color: var(--blue-2);
-  }
-  .toggle__input:focus ~ .toggle__state .toggle__title {
-    text-decoration: underline;
-  }
-  
-  .toggle__input:disabled ~ .toggle__state .toggle__control {
-    background-color: var(--grey-2);
-  }
-  .toggle__input:disabled ~ .toggle__state .toggle__title {
-    color: var(--grey-2);
-  }
-  
-  .toggle__state {
-    display: inline-flex;
-    gap: 12px;
-    align-items: center;
-    cursor: pointer;
-  }
-  .toggle__control {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  
-    height: 28px;
-    width: 28px;
-    border-radius: 4px;
-    border: 1px solid var(--grey-2);
-  }
-  
-  .toggle__title {
-    font-family: Inter;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0em;
-    text-align: left;
-  }
-  
+  position: relative;
+}
+
+.toggle__input {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+}
+
+.toggle__state {
+  display: inline-flex;
+  gap: 12px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.toggle__control-inner {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 2px;
+  top: calc(50% - 24px / 2);
+
+  background: var(--grey-2);
+  border-radius: 16px;
+}
+
+.toggle__control-outer {
+  position: relative;
+  width: 52px;
+  height: 28px;
+
+  background: var(--white);
+  border: 1px solid var(--grey-2);
+  border-radius: 16px;
+}
+
+.toggle__input:checked ~ .toggle__state .toggle__control-inner {
+  left: 26px;
+  background: var(--white);
+}
+.toggle__input:checked ~ .toggle__state .toggle__control-outer {
+  background: var(--blue-2);
+  border-color: var(--blue-2);
+}
+
+.toggle__input:disabled ~ .toggle__state .toggle__control-inner {
+  background-color: var(--grey-3);
+}
+.toggle__input:disabled ~ .toggle__state .toggle__control-outer {
+  background-color: var(--grey-2);
+}
+
+.toggle__title::after {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  content: 'On';
+}
+
+.toggle__input:checked ~ .toggle__state .toggle__title::after {
+  content: 'Off';
+  color: var(--grey-2);
+}
+.toggle__input:disabled ~ .toggle__state .toggle__title::after {
+  content: 'Disabled';
+  color: var(--grey-2);
+}
+.toggle__input:focus ~ .toggle__state .toggle__title::after {
+  text-decoration: underline;
+}
