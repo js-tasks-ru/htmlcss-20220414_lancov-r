@@ -27,6 +27,7 @@
   align-items: center;
   cursor: pointer;
 }
+
 .checkbox__control {
   display: flex;
   flex-direction: column;
@@ -37,6 +38,13 @@
   width: 28px;
   border-radius: 4px;
   border: 1px solid var(--grey-2);
+}
+
+.checkbox_icon {
+  display: none;
+}
+.checkbox__input:checked ~ .checkbox__state .checkbox_icon {
+  display: inline-block;
 }
 
 .checkbox__title {
