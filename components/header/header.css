@@ -22,30 +22,6 @@
   margin: 0px;
 }
 
-.header__logo-triangle {
-  width: 0;
-  height: 0;
-  border-bottom: 30px solid var(--black);
-  border-right: 30px solid transparent;
-  display: inline-block;
-}
-
-.header__logo-square {
-  width: 30px;
-  height: 30px;
-  background: var(--black);
-  display: inline-block;
-}
-
-.header__logo-circle {
-  width: 30px;
-  height: 30px;
-  background: var(--black);
-  -moz-border-radius: 50px;
-  -webkit-border-radius: 50px;
-  border-radius: 50px;
-  display: inline-block;
-}
 
 .header__nav {
   display: flex;

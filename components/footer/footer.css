@@ -7,6 +7,18 @@
   text-align: center;
 }
 
+.footer_inner {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0.04em;
+  color: #acb5bd;
+  background: transparent;
+}
+.footer__inner-title {
+  margin-bottom: 56px;  
+}
+
 .footer__text {
   font-family: Inter;
   font-size: 16px;
@@ -25,16 +37,6 @@
   letter-spacing: 0em;
 }
 
-.footer_inner {
-  height: 114px;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 18px;
-  letter-spacing: 0.04em;
-  color: #acb5bd;
-  background: transparent;
-
-}
 
 @media screen and (max-width: 768px) {
   .footer {

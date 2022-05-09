@@ -61,7 +61,6 @@ body {
   height: 100%;
   flex-grow: 1;
   flex-direction: column;
-  max-width: 825px;
 
   background-color: var(--white);
 
