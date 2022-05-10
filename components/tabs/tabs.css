@@ -1,0 +1,40 @@
+
+.tabs__scroller{
+    display: flex;
+    gap: 40px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    max-height: 44px;
+}
+
+.tabs__label{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--black);
+    cursor: pointer;
+    padding-bottom: 8px;
+    flex-shrink: 0;
+}
+
+
+.tabs__input {
+  display: none;
+}
+
+#all-tab:checked ~ .page__main .container .preview__inner_all,
+#elements-tab:checked ~ .page__main .container .preview__inner_elements,
+#containers-tab:checked ~ .page__main .container .preview__inner_containers,
+#templates-tab:checked ~ .page__main .container .preview__inner_templates {
+  display: flex;
+}
+
+#all-tab:checked ~          .tabs .container .tabs__scroller .tabs__label_all,
+#elements-tab:checked ~     .tabs .container .tabs__scroller .tabs__label_elements,
+#containers-tab:checked ~   .tabs .container .tabs__scroller .tabs__label_containers,
+#templates-tab:checked ~    .tabs .container .tabs__scroller .tabs__label_templates {
+  border-bottom: 5px solid var(--black);
+}
+

@@ -47,18 +47,54 @@
                 </div>
             </header>
 
-            <main class="preview page__main">
+            <input type="radio" name="maintabs" class="tabs__input" id="all-tab" checked>
+            <input type="radio" name="maintabs" class="tabs__input" id="elements-tab">
+            <input type="radio" name="maintabs" class="tabs__input" id="containers-tab">  
+            <input type="radio" name="maintabs" class="tabs__input" id="templates-tab">  
+            
+            <nav class="tabs">
                 <div class="container">
-                    <div class="preview__inner">
-                        <div class="card preview__inner-card"> </div>
-                        <div class="card preview__inner-card"></div>
-                        <div class="card preview__inner-card"></div>
-                        <div class="card preview__inner-card"></div>
-                        <div class="card preview__inner-card"></div>
-                        <div class="card preview__inner-card"></div>
- 
+
+                    <div class="tabs__scroller">
+                        <label for="all-tab" class="tabs__label tabs__label_all">All components</label>
+                        <label for="elements-tab" class="tabs__label tabs__label_elements">Elements</label>
+                        <label for="containers-tab" class="tabs__label tabs__label_containers">Containers</label>
+                        <label for="templates-tab" class="tabs__label tabs__label_templates">Templates</label>
+                    </div>
+                </div>
+
+            </nav>
+
+            <main class=" page__main preview"  ">       
+                <div class="container">
+
+                    <div class="preview__inner preview__inner_all">
+                        <div class="card "> preview - 1</div>
+                        <div class="card "></div>
+                        <div class="card "></div>
+                        <div class="card "></div>
+                        <div class="card "></div>
+                        <div class="card "></div>
                     </div>
 
+                    <div class="preview__inner preview__inner_elements">
+                        <div class="card "> preview - 2</div>
+                        <div class="card "></div>
+                        <div class="card "></div>
+                    </div>
+
+                    <div class="preview__inner preview__inner_containers ">
+                        <div class="card "> preview - 3</div>
+                        <div class="card "></div>
+                        <div class="card "></div>
+                    </div>
+
+                    <div class="preview__inner preview__inner_templates">
+                        <div class="card ">preview - 4 </div>
+                        <div class="card "></div>
+                        <div class="card "></div>
+                    </div>
+                    
                 </div>
             </main>
 

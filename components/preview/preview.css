@@ -1,20 +1,19 @@
 .preview {
   background: #f9fafc;
+
 }
 
 .preview__inner {
   padding: 68px 0;
-  display: flex;
   flex-wrap: wrap;
   justify-content: center;  	 
 
-  gap: 30px;
+  gap: 30px; 
+
+  display: none;
+
 }
 
-.preview__inner-card {
-  flex:  0 0 350px;
-  height: 367px;
-}
 
 @media screen and (max-width: 768px) {
   .preview__inner {
@@ -22,9 +21,4 @@
     gap: 16px;
   }
 
-  .preview__inner-card {
-    flex:  0 0 164px;
-    height: 231px;
-    padding: 24px 0;
-  }
 }
