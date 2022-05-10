@@ -15,3 +15,37 @@
     }
   }
   
+.card__title{
+/* Avatar */
+
+ 
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 21px;
+line-height: 25px;
+text-align: center;
+
+color: var(--black);
+
+}
+
+.card__subtitle{
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+
+color: var(--grey-4);
+
+
+}  
+
+.card__line{
+    height: 1px;
+    background: var(--grey-2);
+}
