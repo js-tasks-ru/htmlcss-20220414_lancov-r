@@ -1,24 +1,32 @@
 .card{
     background-color: var(--white);
     width: 350px;
-    height: 367px;
+    /* height: 367px; */
     box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
     border-radius: 12px;
+    display: flex;
+    flex-direction: column;
 }
 
+.card__description{
+  height: 82px;
+}
 
-@media screen and (max-width: 768px) {
- 
-    .card{
-      flex:  0 0 164px;
-      height: 231px;
-    }
-  }
-  
+.card__preview{
+  height: 285px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  }  
+
+.card__line{
+    height: 1px;
+    background: var(--grey-2);
+    border: 0;
+    display: none;
+}
 .card__title{
-/* Avatar */
-
- 
 
 font-family: 'Roboto';
 font-style: normal;
@@ -28,6 +36,8 @@ line-height: 25px;
 text-align: center;
 
 color: var(--black);
+
+margin-bottom: 6px;
 
 }
 
@@ -45,7 +55,14 @@ color: var(--grey-4);
 
 }  
 
-.card__line{
-    height: 1px;
-    background: var(--grey-2);
+
+
+@media screen and (max-width: 768px) {
+  .card__line{
+    display: block;
+  }
+  .card{
+    flex:  0 0 164px;
+    height: 231px;
+  }
 }
