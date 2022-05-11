@@ -19,6 +19,7 @@
     flex-shrink: 0;
 }
 
+ 
 
 .tabs__input {
   display: none;
@@ -27,14 +28,21 @@
 #all-tab:checked ~ .page__main .container .preview__inner_all,
 #elements-tab:checked ~ .page__main .container .preview__inner_elements,
 #containers-tab:checked ~ .page__main .container .preview__inner_containers,
-#templates-tab:checked ~ .page__main .container .preview__inner_templates {
+#templates-tab:checked ~ .page__main .container .preview__inner_templates, 
+
+#html_tab:checked ~  .content__wrapper .content__text_html ,
+#css_tab:checked ~   .content__wrapper .content__text_css 
+
+{
   display: flex;
 }
 
 #all-tab:checked ~          .tabs .container .tabs__scroller .tabs__label_all,
 #elements-tab:checked ~     .tabs .container .tabs__scroller .tabs__label_elements,
 #containers-tab:checked ~   .tabs .container .tabs__scroller .tabs__label_containers,
-#templates-tab:checked ~    .tabs .container .tabs__scroller .tabs__label_templates {
+#templates-tab:checked ~    .tabs .container .tabs__scroller .tabs__label_templates , 
+  #html_tab:checked ~       .tabs .container .tabs__scroller .tabs__label_HTML , 
+  #css_tab:checked ~        .tabs .container .tabs__scroller .tabs__label_CSS {
   border-bottom: 5px solid var(--black);
 }
 

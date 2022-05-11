@@ -5,6 +5,8 @@
 @import '/components/footer/footer.css';
 @import '/components/menu/menu.css';
 @import '/components/icon/icon.css';
+@import '/components/content/content.css';
+@import '/components/tabs/tabs.css';
 
 :root {
   --white: #ffffff;
@@ -57,16 +59,12 @@ body {
   
  }
 
-.template__content {
-  height: 100%;
-  flex-grow: 1;
-  flex-direction: column;
 
-  background-color: var(--white);
 
-  box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
-  border-radius: 12px;
+.template__preview{
+
 }
+
 
 @media screen and (max-width: 768px) {
 
