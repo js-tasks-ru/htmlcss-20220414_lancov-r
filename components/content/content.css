@@ -16,7 +16,8 @@
     font-weight: 400;
     line-height: 38px;
     letter-spacing: 0em;
-      
+    color: var(--grey-4);
+
  } 
 
  .content__preview{
@@ -28,8 +29,8 @@
  }
  .content__dividing{
     height: 1px;
-    background: #DDE2E5;
-    border: none;
+    background: var(--grey-2);
+    border: 0 none;
  }
 
  .content__wrapper{

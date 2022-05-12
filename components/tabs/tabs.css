@@ -2,9 +2,12 @@
 .tabs__scroller{
     display: flex;
     gap: 40px;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    max-height: 44px;
+    /* overflow-x: scroll;
+    overflow-y: hidden; */
+    /* max-height: 44px; */
+}
+.tabs__scroller_inner{
+  padding: 0 48px;
 }
 
 .tabs__label{
@@ -17,6 +20,7 @@
     cursor: pointer;
     padding-bottom: 8px;
     flex-shrink: 0;
+    
 }
 
  
@@ -32,7 +36,6 @@
 
 #html_tab:checked ~  .content__wrapper .content__text_html ,
 #css_tab:checked ~   .content__wrapper .content__text_css 
-
 {
   display: flex;
 }
@@ -41,8 +44,10 @@
 #elements-tab:checked ~     .tabs .container .tabs__scroller .tabs__label_elements,
 #containers-tab:checked ~   .tabs .container .tabs__scroller .tabs__label_containers,
 #templates-tab:checked ~    .tabs .container .tabs__scroller .tabs__label_templates , 
-  #html_tab:checked ~       .tabs .container .tabs__scroller .tabs__label_HTML , 
-  #css_tab:checked ~        .tabs .container .tabs__scroller .tabs__label_CSS {
+
+#html_tab:checked ~       .tabs .tabs__scroller .tabs__label_HTML , 
+#css_tab:checked ~        .tabs .tabs__scroller .tabs__label_CSS 
+{
   border-bottom: 5px solid var(--black);
 }
 
