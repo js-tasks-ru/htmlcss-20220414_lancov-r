@@ -10,3 +10,11 @@
     object-fit: cover;
     object-position: center top;
 }
+
+@media screen and (max-width: 768px) {
+    .avatar {
+        height: 116px;
+        width: 116px;
+         
+        }
+  }
