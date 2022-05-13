@@ -1,15 +1,27 @@
 .burger__input{
     display: none;
   }
-.burger__menu{
-    width: 100vh;
+.burger{
+    width: 100%;
     height: 100vh;
-    background: rgb(173, 216, 230);
+    background: var(--white-2);
     position: fixed;
     display: none;
+    padding: 16px 12px;
 }
 
-.burger__input:checked ~ .burger__menu{
-    display: block;
+
+.burger__header{
+    height: 64px;
+    border-bottom: 1px solid var(--grey-2);
+    display: flex;
+
 }
 
+@media screen and (max-width: 768px) {
+
+    .burger__input:checked ~ .burger{
+        display: block;
+    }
+      
+  }

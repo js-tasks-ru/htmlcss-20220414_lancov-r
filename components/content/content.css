@@ -21,10 +21,10 @@
  } 
 
  .content__preview{
-     margin: 32px 48px;
+   padding: 32px 48px;
  }
  .content__nav{
-    margin: 0 48px;
+    padding: 0 48px;
 
  }
  .content__dividing{
@@ -34,13 +34,18 @@
  }
 
  .content__wrapper{
-    margin: 50px 42px 64px 42px;
+   padding: 50px 42px 64px 42px;
 
  }
 
 .content__text{
     display: none;
 }
+
+.content__text-scroller{
+   overflow-x: scroll;
+}
+
  .content__text_html{
     display: none;
  }

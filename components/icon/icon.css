@@ -5,15 +5,16 @@
   }
 
 
-  .close-button{
-    width: 32px;
-    height: 32px;
-    background: var(--grey-2);
-    border-radius: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.close-button{
+  width: 32px;
+  height: 32px;
+  background: var(--grey-2);
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 .close-button__cross{
   width: 24px;
   height: 24px;

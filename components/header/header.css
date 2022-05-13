@@ -8,9 +8,6 @@
   padding: 25px 0 25px;
 }
 
-.header__upper-nav_inner {
-  background-color: var(--white-2);
-}
 
 
 .header__title {
@@ -39,14 +36,14 @@
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0em;
-  
+
 }
 
 .header__filler {
-  width: 24px;
+  width: 32px;
   display: none;
-  justify-content: center;  	 
-  align-items: center;	 
+  justify-content: center;
+  align-items: center;
 
 }
 
@@ -55,14 +52,13 @@
 @media screen and (max-width: 768px) {
   .header__filler {
     display: flex;
-}
+  }
 
   .header__nav {
     display: none;
   }
 
   .header__upper-nav_inner {
-    justify-content: space-between;
     padding: 17px 0;
     background-color: var(--white-2);
   }
@@ -75,5 +71,5 @@
     margin: 0px;
     padding-top: 9px;
   }
-   
+
 }
