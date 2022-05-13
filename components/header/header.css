@@ -8,6 +8,11 @@
   padding: 25px 0 25px;
 }
 
+.header__upper-nav_inner {
+  background-color: var(--white-2);
+}
+
+
 .header__title {
   font-family: 'Inter';
   font-style: normal;
@@ -45,6 +50,8 @@
 
 }
 
+
+
 @media screen and (max-width: 768px) {
   .header__filler {
     display: flex;
@@ -57,6 +64,7 @@
   .header__upper-nav_inner {
     justify-content: space-between;
     padding: 17px 0;
+    background-color: var(--white-2);
   }
 
   .header__title {

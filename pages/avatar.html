@@ -4,19 +4,38 @@
 
 <head>
   <link rel="stylesheet" href="../assets/css/main.css " />
+  <link rel="stylesheet" href="../components/burgerMenu/burgerMenu.css " />
+
   <link rel="stylesheet" href="../06-lection4/01-avatar/avatar.css " />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
   <div class="template">
-    <header class="header">
+
+    <input type="checkbox"  class="burger__input" id="burger_menu" name="burger_menu" >
+    <div class="burger__menu">
+      <label for="burger_menu"  > 
+        <div class="close-button">
+        <svg class="close-button__cross">
+          <use href="/assets/icons/sprite.svg#cross"></use>
+        </svg>
+        </div>
+      </label>
+
+    </div>
+
+<header class="header">
       <div class="container">
+
+
         <div class="header__upper-nav header__upper-nav_inner">
           <div class="header__filler">
-            <svg class="icon">
-              <use href="/assets/icons/sprite.svg#menu"></use>
-            </svg>
+            <label for="burger_menu"  > 
+              <svg class="icon">
+                <use href="/assets/icons/sprite.svg#menu"></use>
+              </svg>
+            </label>
           </div>
           <a class="header__logo" href="../index.html">
             <svg class="icon">
@@ -44,6 +63,9 @@
             </svg>
           </div>
         </div>
+
+
+
       </div>
     </header>
 

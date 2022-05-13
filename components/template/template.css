@@ -1,4 +1,7 @@
+.template{
+  background-color: var(--white-2);
 
+}
 .template__main {
   flex-grow: 1;
   padding-bottom: 16px;

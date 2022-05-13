@@ -1,0 +1,15 @@
+.burger__input{
+    display: none;
+  }
+.burger__menu{
+    width: 100vh;
+    height: 100vh;
+    background: rgb(173, 216, 230);
+    position: fixed;
+    display: none;
+}
+
+.burger__input:checked ~ .burger__menu{
+    display: block;
+}
+
