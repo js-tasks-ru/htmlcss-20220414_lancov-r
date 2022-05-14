@@ -1,0 +1,49 @@
+.tooltip {
+  display: inline-block;
+  position: relative;
+}
+.tooltip__ico {
+  cursor: pointer;
+}
+
+.tooltip__infoBlock {
+  display: none;
+
+  padding: 13px 21px 8px 21px;
+  height: 24px;
+  border-radius: 10px;
+  background: var(--black);
+
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0em;
+  text-align: center;
+  color: var(--grey-2);
+  box-shadow: 0px 2px 4px 0px #2124290d;
+  white-space: nowrap;
+
+  position: absolute;  
+  left: 50%;
+  top: calc(100% + 15px);
+  
+  /* После добавления этого сдвига ховер начинает колбасить как кошмар эпилептика */
+  transform: translateX(-50%); 
+   
+}
+
+.tooltip__ico:hover ~ .tooltip__infoBlock {
+  display: block;
+ }
+
+.tooltip__infoBlock:before{
+    content: "";
+    width: 0;
+    height: 0;
+    border: 15px solid transparent; 
+    border-bottom: 16px solid var(--black);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+ }
