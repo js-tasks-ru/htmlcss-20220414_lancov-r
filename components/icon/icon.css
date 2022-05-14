@@ -2,8 +2,15 @@
     width: 32px;
     height: 32px;
     color: var(--black);
-  }
+      }
 
+  .logo {
+    margin: 0px;
+    text-decoration: none;
+    display: flex;
+    width: 112px;
+    gap: 8px;
+  }
 
 .close-button{
   width: 32px;

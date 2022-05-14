@@ -1,139 +1,195 @@
 <!DOCTYPE html>
 <!-- Главная страница -->
 <html lang="ru">
+  <head>
+    <link rel="stylesheet" href="../assets/css/main.css " />
+    <link rel="stylesheet" href="../components/burgerMenu/burgerMenu.css " />
 
-<head>
-  <link rel="stylesheet" href="../assets/css/main.css " />
-  <link rel="stylesheet" href="../components/burgerMenu/burgerMenu.css " />
+    <link rel="stylesheet" href="../06-lection4/01-avatar/avatar.css " />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
 
-  <link rel="stylesheet" href="../06-lection4/01-avatar/avatar.css " />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
+  <body>
+    <div class="template">
+      <input type="checkbox" class="burger__input" id="burger" />
 
-<body>
-  <div class="template">
+      <div class="burger">
+        <div class="container">
+          <div
+            class="header__upper-nav header__upper-nav_inner header__upper-nav_burger"
+          >
+            <div class="header__filler">
+              <label for="burger" class="">
+                <div class="close-button">
+                  <svg class="close-button__cross">
+                    <use href="/assets/icons/sprite.svg#cross"></use>
+                  </svg>
+                </div>
+              </label>
+            </div>
 
-    <input type="checkbox" class="burger__input" id="burger">
-    <div class="burger">
-      <div class="header__upper-nav header__upper-nav_inner">
-
-        <div class="header__filler">
-          <label for="close-button" class="">
-            <div class="close-button">
-              <svg class="close-button__cross">
-                <use href="/assets/icons/sprite.svg#cross"></use>
+            <div class="logo">
+              <svg class="icon">
+                <use href="/assets/icons/sprite.svg#logo-square"></use>
+              </svg>
+              <svg class="icon">
+                <use href="/assets/icons/sprite.svg#logo-circle"></use>
+              </svg>
+              <svg class="icon">
+                <use href="/assets/icons/sprite.svg#logo-triangle"></use>
               </svg>
             </div>
-          </label>
+            <div class="header__filler"></div>
+          </div>
+
+          <section class="menu__section menu__section_burger">
+            <h4 class="menu__title menu__title_burger">Elements</h4>
+            <ul class="menu__list menu__list_burger ">
+              <li class="menu__list_current-page">Avatar</li>
+              <li>Custom form elements</li>
+              <li>Button</li>
+            </ul>
+          </section>
+
+          <section class="menu__section menu__section_burger">
+            <h4 class="menu__title menu__title_burger">Elements</h4>
+            <ul class="menu__list menu__list_burger ">
+              <li>Avatar</li>
+              <li>Custom form elements</li>
+              <li>Button</li>
+            </ul>
+          </section>
+
+          <section class="menu__section ">
+            <h4 class="menu__title menu__title_burger">Elements</h4>
+            <ul class="menu__list menu__list_burger ">
+              <li>Avatar</li>
+              <li>Custom form elements</li>
+              <li>Button</li>
+            </ul>
+          </section>
+
         </div>
-
-        <div class="header__logo">
-          <svg class="icon">
-            <use href="/assets/icons/sprite.svg#logo-square"></use>
-          </svg>
-          <svg class="icon">
-            <use href="/assets/icons/sprite.svg#logo-circle"></use>
-          </svg>
-          <svg class="icon">
-            <use href="/assets/icons/sprite.svg#logo-triangle"></use>
-          </svg>
-        </div>
-
-        <div class="header__filler"></div>
-
-
-
       </div>
-    </div>
 
-    <header class="header">
-      <div class="container">
-
-
-        <div class="header__upper-nav header__upper-nav_inner">
-          <div class="header__filler">
-            <label for="burger">
+      <header class="header">
+        <div class="container">
+          <div class="header__upper-nav header__upper-nav_inner">
+            <div class="header__filler">
+              <label class="icon" for="burger">
+                <svg class="icon">
+                  <use href="/assets/icons/sprite.svg#menu"></use>
+                </svg>
+              </label>
+            </div>
+            <a class="logo" href="../index.html">
               <svg class="icon">
-                <use href="/assets/icons/sprite.svg#menu"></use>
+                <use href="/assets/icons/sprite.svg#logo-square"></use>
               </svg>
-            </label>
-          </div>
-          <a class="header__logo" href="../index.html">
-            <svg class="icon">
-              <use href="/assets/icons/sprite.svg#logo-square"></use>
-            </svg>
-            <svg class="icon">
-              <use href="/assets/icons/sprite.svg#logo-circle"></use>
-            </svg>
-            <svg class="icon">
-              <use href="/assets/icons/sprite.svg#logo-triangle"></use>
-            </svg>
-          </a>
+              <svg class="icon">
+                <use href="/assets/icons/sprite.svg#logo-circle"></use>
+              </svg>
+              <svg class="icon">
+                <use href="/assets/icons/sprite.svg#logo-triangle"></use>
+              </svg>
+            </a>
 
-          <div class="header__filler"></div>
+            <div class="header__filler"></div>
 
-          <div class="header__nav">
-            <div>Components</div>
-            <div>About</div>
-            <div>Contact</div>
-            <svg class="icon">
-              <use href="/assets/icons/sprite.svg#day"></use>
-            </svg>
-            <svg class="icon">
-              <use href="/assets/icons/sprite.svg#night"></use>
-            </svg>
+            <div class="header__nav">
+              <div>Components</div>
+              <div>About</div>
+              <div>Contact</div>
+              <svg class="icon">
+                <use href="/assets/icons/sprite.svg#day"></use>
+              </svg>
+              <svg class="icon">
+                <use href="/assets/icons/sprite.svg#night"></use>
+              </svg>
+            </div>
           </div>
         </div>
+      </header>
 
+      <main class="template__main">
+        <div class="container">
+          <div class="template__inner">
+            <aside class="menu">
+              <section class="menu__section">
+                <h4 class="menu__title">Elements</h4>
+                <ul class="menu__list">
+                  <li class="menu__list_current-page">Avatar</li>
+                  <li>Custom form elements</li>
+                  <li>Button</li>
+                </ul>
+              </section>
+              <section class="menu__section">
+                <h4 class="menu__title">Containers</h4>
+                <ul class="menu__list">
+                  <li>Avatar</li>
+                  <li>Custom form elements</li>
+                  <li>Button</li>
+                </ul>
+              </section>
+              <section class="menu__section">
+                <h4 class="menu__title">Templates</h4>
+                <ul class="menu__list">
+                  <li>Avatar</li>
+                  <li>Custom form elements</li>
+                  <li>Button</li>
+                </ul>
+              </section>
+            </aside>
+            <div class="content">
+              <section class="content__preview">
+                <h3 class="content__title">Avatar</h3>
+                <div class="avatar">
+                  <img
+                    class="avatar__img"
+                    src="/assets/images/aku-7fbs.jpg"
+                    alt="avatar"
+                  />
+                </div>
+              </section>
 
+              <input
+                type="radio"
+                name="inner_tabs"
+                class="tabs__input"
+                id="html_tab"
+                checked
+              />
+              <input
+                type="radio"
+                name="inner_tabs"
+                class="tabs__input"
+                id="css_tab"
+              />
+              <nav class="tabs">
+                <div class="tabs__scroller tabs__scroller_inner">
+                  <label for="html_tab" class="tabs__label tabs__label_HTML"
+                    >HTML</label
+                  >
+                  <label for="css_tab" class="tabs__label tabs__label_CSS"
+                    >CSS</label
+                  >
+                </div>
+              </nav>
 
-      </div>
-    </header>
+              <hr class="content__dividing" />
 
-    <main class="template__main">
-      <div class="container">
-        <div class="template__inner">
-          <aside class="menu">
-            <section class="menu__section">
-              <h4 class="menu__title">Elements</h4>
-              <ul class="menu__list">
-                <li>Avatar</li>
-                <li>Custom form elements</li>
-                <li>Button</li>
-              </ul>
-            </section>
-          </aside>
-          <div class="content">
-
-            <section class="content__preview">
-              <h3 class="content__title">
-                Avatar
-              </h3>
-              <div class="avatar">
-                <img class="avatar__img" src="/assets/images/aku-7fbs.jpg" alt="avatar">
-              </div>
-            </section>
-
-            <input type="radio" name="inner_tabs" class="tabs__input" id="html_tab" checked>
-            <input type="radio" name="inner_tabs" class="tabs__input" id="css_tab">
-            <nav class="tabs">
-              <div class="tabs__scroller tabs__scroller_inner">
-                <label for="html_tab" class="tabs__label tabs__label_HTML">HTML</label>
-                <label for="css_tab" class="tabs__label tabs__label_CSS">CSS</label>
-              </div>
-            </nav>
-
-            <hr class="content__dividing">
-
-            <section class="content__wrapper">
-              <code class="content__text content__text_html">
-<pre class="content__text-scroller">  &lt;div class=&quot;avatar&quot;&gt;
+              <section class="content__wrapper">
+                <code class="content__text content__text_html">
+                  <pre class="content__text-scroller">
+  &lt;div class=&quot;avatar&quot;&gt;
     &lt;img class=&quot;avatar__img&quot; src=&quot;/assets/images/aku-7fbs.jpg&quot; alt=&quot;avatar&quot;&gt;
-  &lt;/div&gt;</pre>
+  &lt;/div&gt;</pre
+                  >
                 </code>
 
-              <code class=" content__text content__text_css">
-<pre class="content__text-scroller">  .avatar {
+                <code class="content__text content__text_css">
+                  <pre class="content__text-scroller">
+  .avatar {
     height: 160px;
     width: 160px;
       
@@ -144,20 +200,18 @@
       border-radius: 100px;
       object-fit: cover;
       object-position: center top;
-  }</pre>
-            </code>
-
-            </section>
-
+  }</pre
+                  >
+                </code>
+              </section>
+            </div>
           </div>
         </div>
-      </div>
-    </main>
+      </main>
 
-    <footer class="footer footer_inner">
-      <div class="footer__inner-title">REUSABLE COMPONENT LIBRARY</div>
-    </footer>
-  </div>
-</body>
-
+      <footer class="footer footer_inner">
+        <div class="footer__inner-title">REUSABLE COMPONENT LIBRARY</div>
+      </footer>
+    </div>
+  </body>
 </html>
