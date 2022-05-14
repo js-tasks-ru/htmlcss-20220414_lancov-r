@@ -11,6 +11,7 @@
 @import '../../components/menu/menu.css';
 @import '../../components/content/content.css';
 @import '../../components/template/template.css';
+@import '../../07-lection5/03-toggler/toggler.css';
 
 :root {
     --white: #ffffff;

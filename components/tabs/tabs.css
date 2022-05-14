@@ -20,7 +20,8 @@
     cursor: pointer;
     padding-bottom: 8px;
     flex-shrink: 0;
-    
+    user-select: none;
+   
 }
 
  

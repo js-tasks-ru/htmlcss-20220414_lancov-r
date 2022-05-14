@@ -2,8 +2,21 @@
     width: 32px;
     height: 32px;
     color: var(--black);
-      }
+ }
+ 
+ 
+.icon__day{
+  width: 24px;
+  height: 24px;
+  color: var(--black);
+}
 
+.icon__night{
+  width: 24px;
+  height: 24px;
+  color: var(--grey-3);
+}
+  
   .logo {
     margin: 0px;
     text-decoration: none;

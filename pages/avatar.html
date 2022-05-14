@@ -42,6 +42,18 @@
             <div class="header__filler"></div>
           </div>
 
+          
+          <label class="burger__theme-toggler">
+            <input type="checkbox" class="toggle__input" />
+            <div class="burger__toggler-label">Dark mode</div>
+            <div class="toggle__state">
+              <div class="toggle__control-outer">
+                <div class="toggle__control-inner"></div>
+              </div>
+            </div>
+          </label>
+      
+
           <section class="menu__section menu__section_burger">
             <h4 class="menu__title menu__title_burger">Elements</h4>
             <ul class="menu__list menu__list_burger ">
@@ -97,15 +109,33 @@
             <div class="header__filler"></div>
 
             <div class="header__nav">
-              <div>Components</div>
-              <div>About</div>
-              <div>Contact</div>
-              <svg class="icon">
-                <use href="/assets/icons/sprite.svg#day"></use>
-              </svg>
-              <svg class="icon">
-                <use href="/assets/icons/sprite.svg#night"></use>
-              </svg>
+            
+              <div class="header__upper-nav-block">Components</div>
+              <div class="header__upper-nav-block">About</div>
+              <div class="header__upper-nav-block">Contact</div>
+
+              <div class="header__upper-nav-block header__upper-nav-block_theme">
+              
+                  <input type="checkbox" class="toggle__input" id="theme-toggle" />
+                  
+                  <svg class="icon__day">
+                      <use href="/assets/icons/sprite.svg#day"></use>        
+                  </svg>
+
+                  <label class="toggle__label" for="theme-toggle">
+                  <div class="toggle__state">
+                  <div class="toggle__control-outer">
+                      <div class="toggle__control-inner"></div>
+                  </div>
+                  </div>
+                  </label>
+      
+                  <svg class="icon__night">
+                      <use href="/assets/icons/sprite.svg#night"></use>        
+                  </svg>
+
+              </div>
+
             </div>
           </div>
         </div>

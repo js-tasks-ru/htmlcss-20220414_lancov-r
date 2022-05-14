@@ -35,19 +35,36 @@
   border-radius: 16px;
 }
 
-.toggle__input:checked ~ .toggle__state .toggle__control-inner {
+.toggle__label{
+  height: 31px;
+}
+
+.toggle__input:checked ~ .toggle__state .toggle__control-inner,
+.toggle__input:checked ~ .toggle__label .toggle__state .toggle__control-inner {
   left: 26px;
   background: var(--white);
 }
-.toggle__input:checked ~ .toggle__state .toggle__control-outer {
+.toggle__input:checked ~ .toggle__state .toggle__control-outer,
+.toggle__input:checked ~ .toggle__label .toggle__state .toggle__control-outer {
   background: var(--blue-2);
   border-color: var(--blue-2);
 }
 
-.toggle__input:disabled ~ .toggle__state .toggle__control-inner {
+.toggle__input:checked ~ .icon__day{
+  color: var(--grey-3);
+}
+
+.toggle__input:checked ~ .icon__night {
+  color: var(--black);
+}
+
+.toggle__input:disabled ~ .toggle__state .toggle__control-inner,
+.toggle__input:disabled ~ .toggle__label .toggle__state .toggle__control-inner {
   background-color: var(--grey-3);
 }
-.toggle__input:disabled ~ .toggle__state .toggle__control-outer {
+
+.toggle__input:disabled ~ .toggle__state .toggle__control-outer,
+.toggle__input:disabled ~ .toggle__label .toggle__state .toggle__control-outer {
   background-color: var(--grey-2);
 }
 
@@ -61,10 +78,13 @@
   content: 'On';
 }
 
-.toggle__input:checked ~ .toggle__state .toggle__title::after {
+.toggle__input:checked ~ .toggle__state .toggle__title::after,
+.toggle__input:checked ~ .toggle__label .toggle__state .toggle__title::after {
+
   content: 'Off';
   color: var(--grey-2);
 }
+ 
 .toggle__input:disabled ~ .toggle__state .toggle__title::after {
   content: 'Disabled';
   color: var(--grey-2);

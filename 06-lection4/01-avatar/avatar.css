@@ -1,5 +1,4 @@
 .avatar {
-<<<<<<< HEAD
     height: 160px;
     width: 160px;
      
@@ -19,15 +18,3 @@
          
         }
   }
-=======
-    height: 102px;
-    width: 102px;
-}
-.avatar__img {
-    width: 100%;
-    height: 100%;
-    border-radius: 50px;
-    object-fit: cover;
-    object-position: center top;
-}
->>>>>>> 07-lection5-03-toggler

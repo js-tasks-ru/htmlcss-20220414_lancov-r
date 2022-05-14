@@ -18,7 +18,24 @@
 
 }
 
+.burger__theme-toggler{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--grey-2);
+    padding: 28px 0 24px 0 ;
+}
 
+.burger__toggler-label{
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    user-select: none;
+
+}
 
 @media screen and (max-width: 768px) {
 

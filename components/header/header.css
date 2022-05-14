@@ -8,8 +8,15 @@
   padding: 25px 0;
 }
 
-.header__upper-nav_burger {
-  border-bottom: 1px solid var(--grey-2);
+.header__upper-nav-block {
+  display: flex;
+  align-items: center;
+}
+
+.header__upper-nav-block_theme{
+  justify-content: space-between;
+  width: 130px;
+  gap: 14px;
 }
 
 .header__title {
@@ -55,6 +62,11 @@
     background-color: var(--white-2);
   }
 
+  .header__upper-nav_burger {
+    border-bottom: 1px solid var(--grey-2);
+    padding-bottom: 32px;
+  }
+  
   .header__title {
     font-style: normal;
     font-weight: 400;
