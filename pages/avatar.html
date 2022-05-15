@@ -28,7 +28,7 @@
               </label>
             </div>
 
-            <div class="logo">
+            <a class="logo" href="../index.html">
               <svg class="icon">
                 <use href="/assets/icons/sprite.svg#logo-square"></use>
               </svg>
@@ -38,21 +38,24 @@
               <svg class="icon">
                 <use href="/assets/icons/sprite.svg#logo-triangle"></use>
               </svg>
-            </div>
+            </a>
             <div class="header__filler"></div>
           </div>
 
-          
-          <label class="burger__theme-toggler">
-            <input type="checkbox" class="toggle__input" />
-            <div class="burger__toggler-label">Dark mode</div>
-            <div class="toggle__state">
-              <div class="toggle__control-outer">
-                <div class="toggle__control-inner"></div>
+          <div class="burger__theme-toggler">
+            <input type="checkbox" class="toggle__input" id="burger-theme-toggle"/>
+            <label class="toggle__label" for="burger-theme-toggle">
+              <div class="burger__toggler-label">Dark mode</div>
+            </label>
+            <label  class="toggle__label" for="burger-theme-toggle">
+                <div class="toggle__state">
+                <div class="toggle__control-outer">
+                  <div class="toggle__control-inner"></div>
+                </div>
               </div>
-            </div>
-          </label>
-      
+            </label>
+
+          </div>
 
           <section class="menu__section menu__section_burger">
             <h4 class="menu__title menu__title_burger">Elements</h4>
