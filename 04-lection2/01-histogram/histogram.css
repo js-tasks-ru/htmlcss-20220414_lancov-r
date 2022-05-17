@@ -55,6 +55,7 @@
     letter-spacing: 0em;
     color:     var(--blue);
     margin: 3px 0px 0px;
+    text-decoration: none;
 }
 .histogram__chart {
     display: flex;
