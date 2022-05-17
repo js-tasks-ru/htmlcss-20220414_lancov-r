@@ -1,47 +1,43 @@
 .checkbox {
-/* position: relative; */
-position: absolute;
-left: 100px;
-top: 100px;
+  position: relative;
 }
 
 .checkbox__input {
-    position: absolute;
-    clip: rect(0,0,0,0);
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
 }
 
-.checkbox__input:checked ~ .checkbox__state  .checkbox__control {
-    background-color: var(--blue-2);
+.checkbox__input:checked ~ .checkbox__state .checkbox__control {
+  background-color: var(--blue-2);
 }
-.checkbox__input:focus ~ .checkbox__state  .checkbox__title {
-    text-decoration: underline;
-}
-
-.checkbox__input:disabled ~ .checkbox__state  .checkbox__control {
-    background-color: var(--grey-2);
-}
-.checkbox__input:disabled ~ .checkbox__state  .checkbox__title {
-    color: var(--grey-2);
+.checkbox__input:focus ~ .checkbox__state .checkbox__title {
+  text-decoration: underline;
 }
 
+.checkbox__input:disabled ~ .checkbox__state .checkbox__control {
+  background-color: var(--grey-2);
+}
+.checkbox__input:disabled ~ .checkbox__state .checkbox__title {
+  color: var(--grey-2);
+}
 
 .checkbox__state {
-    display: inline-flex;
-    gap: 12px;
-    align-items: center ;
-    cursor: pointer;
+  display: inline-flex;
+  gap: 12px;
+  align-items: center;
+  cursor: pointer;
 }
-.checkbox__control {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 
-    height: 28px;
-    width: 28px;
-    border-radius: 4px;
-    border: 1px solid var(--grey-2)
-    
+.checkbox__control {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 28px;
+  width: 28px;
+  border-radius: 4px;
+  border: 1px solid var(--grey-2);
 }
 
 .checkbox__title {
@@ -54,6 +50,15 @@ text-align: left;
  
 }
 
+.checkbox_icon {
+    display: none;
+  }
+
+.checkbox__input:checked ~ .checkbox__state .checkbox_icon {
+    display: inline-block;
+  }
+  
+  
 .circle{
     width: 30px;
     height: 30px;
