@@ -1,5 +1,8 @@
 .checkbox {
-position: relative;
+/* position: relative; */
+position: absolute;
+left: 100px;
+top: 100px;
 }
 
 .checkbox__input {
@@ -40,9 +43,7 @@ position: relative;
     border: 1px solid var(--grey-2)
     
 }
-.checkbox_icon {
 
-}
 .checkbox__title {
  font-family: Inter;
 font-size: 16px;
@@ -52,3 +53,36 @@ letter-spacing: 0em;
 text-align: left;
  
 }
+
+.circle{
+    width: 30px;
+    height: 30px;
+    border-radius: 10%;
+    visibility: hidden;
+  
+    background:  rgba(136, 136, 136,0.6);
+    position: absolute;
+    z-index: -1;
+}
+
+.checkbox__input:checked ~ .checkbox__state .circle{
+    animation-duration: 350ms;
+    animation-name: expand;
+}
+
+@keyframes expand {
+    from {
+        visibility: unset;
+    }
+  
+    40%{
+         transform: scale(2,2);
+         opacity: 0.1;
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden;
+        transform: scale(0,0);
+    }
+  }
