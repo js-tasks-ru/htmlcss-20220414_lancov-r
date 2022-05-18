@@ -39,7 +39,10 @@ html,body{
 }
 
 html[data-theme-dark]{
-    --white:  #F03D3E;
+    --white:  #212429;
+    --white-2: #495057;
+    --black: #ffffff;
+
 }
 
 body {
