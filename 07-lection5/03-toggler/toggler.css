@@ -35,9 +35,6 @@
   border-radius: 16px;
 }
 
-.toggle__label{
-  height: 31px;
-}
 
 .toggle__input:checked ~ .toggle__state .toggle__control-inner,
 .toggle__input:checked ~ .toggle__label .toggle__state .toggle__control-inner {

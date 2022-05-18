@@ -5,19 +5,19 @@
  }
  
  
-.icon__day{
+.icon-day{
   width: 24px;
   height: 24px;
   color: var(--black);
 }
 
-.icon__night{
+.icon-night{
   width: 24px;
   height: 24px;
   color: var(--grey-3);
 }
   
-  .logo {
+.logo {
     margin: 0px;
     text-decoration: none;
     display: flex;
