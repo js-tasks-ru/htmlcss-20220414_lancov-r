@@ -5,10 +5,17 @@
 @import '../../components/footer/footer.css';
 @import '../../components/page/page.css';
 @import '../../components/container/container.css';
-
+@import '../../components/card/card.css';
+@import '../../components/icon/icon.css';
+@import '../../components/tabs/tabs.css';
+@import '../../components/menu/menu.css';
+@import '../../components/content/content.css';
+@import '../../components/template/template.css';
+@import '../../07-lection5/03-toggler/toggler.css';
 
 :root {
     --white: #ffffff;
+    --white-2: #f9fafc;
     --black: #212429;
     --pink: #F784AD;
     --purple: #7048E8;
