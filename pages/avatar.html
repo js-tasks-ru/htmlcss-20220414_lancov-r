@@ -11,8 +11,10 @@
 
   <body>
     <div class="template">
+    
       <input type="checkbox" class="burger__input" id="burger" />
-
+      <input type="checkbox" class="toggle__input" id="theme-changer"/>
+     
       <div class="burger">
         <div class="container">
           <div
@@ -43,11 +45,10 @@
           </div>
 
           <div class="burger__theme-toggler">
-            <input type="checkbox" class="toggle__input" id="burger-theme-toggle"/>
-            <label  for="burger-theme-toggle">
+            <label  for="theme-changer">
               <div class="burger__toggler-label">Dark mode</div>
             </label>
-            <label   for="burger-theme-toggle">
+            <label class="toggle__label"  for="theme-changer">
                 <div class="toggle__state">
                 <div class="toggle__control-outer">
                   <div class="toggle__control-inner"></div>
@@ -118,18 +119,16 @@
               <div class="header__upper-nav-block">Contact</div>
 
               <div class="header__upper-nav-block header__upper-nav-block_theme">
-              
-                  <input type="checkbox" class="toggle__input" id="theme-toggle" />
                   
                   <svg class="icon-day">
                       <use href="/assets/icons/sprite.svg#day"></use>        
                   </svg>
 
-                  <label for="theme-toggle">
+                  <label class ="toggle__label" for="theme-changer">
                   <div class="toggle__state">
-                  <div class="toggle__control-outer">
-                      <div class="toggle__control-inner"></div>
-                  </div>
+                    <div class="toggle__control-outer">
+                        <div class="toggle__control-inner"></div>
+                    </div>
                   </div>
                   </label>
       
@@ -247,4 +246,6 @@
       </footer>
     </div>
   </body>
+  <script src="../10-lection8/01-theme-changer/theme-changer.js"></script>
+
 </html>

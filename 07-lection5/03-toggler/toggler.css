@@ -36,32 +36,36 @@
 }
 
 
-.toggle__input:checked ~ .toggle__state .toggle__control-inner,
-.toggle__input:checked ~ .toggle__label .toggle__state .toggle__control-inner {
+.toggle__input:checked ~ .burger .toggle__control-inner,
+.toggle__input:checked ~ .header .toggle__control-inner {
   left: 26px;
   background: var(--white);
 }
-.toggle__input:checked ~ .toggle__state .toggle__control-outer,
-.toggle__input:checked ~ .toggle__label .toggle__state .toggle__control-outer {
+
+
+.toggle__input:checked ~ .burger .toggle__control-outer,
+.toggle__input:checked ~ .header .toggle__control-outer {
   background: var(--blue-2);
   border-color: var(--blue-2);
 }
 
-.toggle__input:checked ~ .icon__day{
+.toggle__input:checked ~ .header .icon-day,
+.toggle__input:checked ~ .burger .icon-day{
   color: var(--grey-3);
 }
 
-.toggle__input:checked ~ .icon__night {
+.toggle__input:checked ~ .header .icon-night ,
+.toggle__input:checked ~ .burger .icon-night {
   color: var(--black);
 }
 
-.toggle__input:disabled ~ .toggle__state .toggle__control-inner,
-.toggle__input:disabled ~ .toggle__label .toggle__state .toggle__control-inner {
+.toggle__input:disabled ~ .header .toggle__control-inner,
+.toggle__input:disabled ~ .burger .toggle__control-inner {
   background-color: var(--grey-3);
 }
 
-.toggle__input:disabled ~ .toggle__state .toggle__control-outer,
-.toggle__input:disabled ~ .toggle__label .toggle__state .toggle__control-outer {
+.toggle__input:disabled ~ .header .toggle__control-outer,
+.toggle__input:disabled ~ .burger .toggle__state .toggle__control-outer {
   background-color: var(--grey-2);
 }
 

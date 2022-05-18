@@ -38,6 +38,9 @@ html,body{
     height: 100%;
 }
 
+html[data-theme-dark]{
+    --white:  #F03D3E;
+}
 
 body {
     font-family: 'Roboto', sans-serif;
