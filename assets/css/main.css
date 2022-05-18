@@ -11,6 +11,7 @@
 @import '../../components/menu/menu.css';
 @import '../../components/content/content.css';
 @import '../../components/template/template.css';
+@import '../../07-lection5/03-toggler/toggler.css';
 
 :root {
     --white: #ffffff;
@@ -19,6 +20,7 @@
     --pink: #F784AD;
     --purple: #7048E8;
     --blue: #374FC7;
+    --blue-2: #4263EB;
     --red: #F03D3E;
     --grey-1: #F8F9FA;
     --grey-2: #DDE2E5;
@@ -31,8 +33,6 @@
     --primary: var(--blue);
     --secondary: var(--purple);
 }
-
-
 
 html,body{
     height: 100%;

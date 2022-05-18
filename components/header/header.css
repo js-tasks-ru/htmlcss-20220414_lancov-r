@@ -5,10 +5,19 @@
 .header__upper-nav {
   display: flex;
   justify-content: space-between;
-  padding: 25px 0 25px;
+  padding: 25px 0;
 }
 
+.header__upper-nav-block {
+  display: flex;
+  align-items: center;
+}
 
+.header__upper-nav-block_theme{
+  justify-content: space-between;
+  width: 130px;
+  gap: 14px;
+}
 
 .header__title {
   font-family: 'Inter';
@@ -21,12 +30,6 @@
   padding-bottom: 40px;
 }
 
-.header__logo {
-  margin: 0px;
-  text-decoration: none;
-}
-
-
 .header__nav {
   display: flex;
   gap: 24px;
@@ -36,7 +39,6 @@
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0em;
-
 }
 
 .header__filler {
@@ -44,10 +46,7 @@
   display: none;
   justify-content: center;
   align-items: center;
-
 }
-
-
 
 @media screen and (max-width: 768px) {
   .header__filler {
@@ -63,6 +62,11 @@
     background-color: var(--white-2);
   }
 
+  .header__upper-nav_burger {
+    border-bottom: 1px solid var(--grey-2);
+    padding-bottom: 32px;
+  }
+  
   .header__title {
     font-style: normal;
     font-weight: 400;
@@ -71,5 +75,4 @@
     margin: 0px;
     padding-top: 9px;
   }
-
 }

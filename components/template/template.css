@@ -1,6 +1,8 @@
 .template{
   background-color: var(--white-2);
-
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 .template__main {
   flex-grow: 1;
@@ -20,8 +22,6 @@
 
   .template__inner {
     display: block;
-    height: 100%;
-    
   }
 
 }

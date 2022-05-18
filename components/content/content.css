@@ -40,10 +40,12 @@
 
 .content__text{
     display: none;
+    overflow-x: auto;
+
 }
 
 .content__text-scroller{
-   overflow-x: scroll;
+   width: 0 ;
 }
 
  .content__text_html{
