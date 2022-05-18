@@ -1,11 +1,11 @@
-.form-group {
+.text-input {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   position: relative;
 }
 
-.form-label {
+.text-input__label {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
@@ -17,11 +17,10 @@
   color: var(--grey-3);
 }
 
-.text-field {
-  display: inline-block;
+.text-input__field {
+  position: relative;
 }
-
-.text-field__input {
+.text-input__input {
   background: var(--white);
   border: 1px solid var(--grey-2);
 
@@ -31,7 +30,7 @@
   padding: 17px 60px 13px 24px;
   box-sizing: border-box;
 }
-.text-field__input::placeholder {
+.text-input__input::placeholder {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
@@ -40,11 +39,9 @@
   color: var(--grey-2);
 }
 
-.text-field {
-  position: relative;
-}
 
-.text-field__icon{
+
+.text-input__icon{
   display: none;
   height: 24px;
   width: 24px;
@@ -54,27 +51,27 @@
   top: 17px;
 }
 
-.text-field__icon_success{
+.text-input__icon_success{
   color: var(--blue-2);
 } 
 
-.form-group_success .text-field__icon_success {
+.text-input_success .text-input__icon_success {
   display: block;
 }
-.form-group_eror .text-field__input {
+.text-input_eror .text-input__input {
   border-color: var(--red);
   box-shadow: 0px 1px 1px 0px #f03d3e1a;
 }
 
-.text-field__icon_error{
+.text-input__icon_error{
   color: var(--red);
 }
 
-.form-group_eror .text-field__icon_error {
+.text-input_eror .text-input__icon_error {
   display: block;
 }
 
-.text-field__input:focus {
+.text-input__input:focus {
   outline: none;
   border: 1px solid var(--blue-2);
   box-shadow: 0px 1px 1px rgba(51, 154, 240, 0.1);
