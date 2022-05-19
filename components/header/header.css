@@ -1,5 +1,5 @@
 .header {
-  color: var(--black);
+  color: var(--font-1);
 }
 
 .header__upper-nav {
@@ -59,11 +59,11 @@
 
   .header__upper-nav_inner {
     padding: 17px 0;
-    background-color: var(--white-2);
+    background-color: var(--bg-2);
   }
 
   .header__upper-nav_burger {
-    border-bottom: 1px solid var(--grey-2);
+    border-bottom: 1px solid var(--border-1);
     padding-bottom: 32px;
   }
   

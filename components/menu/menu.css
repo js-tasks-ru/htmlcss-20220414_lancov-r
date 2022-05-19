@@ -7,7 +7,7 @@
     /* padding-bottom:16px ; */
   }
   .menu__section_burger{
-     border-bottom: 1px solid var(--grey-2);
+     border-bottom: 1px solid var(--border-1);
   }
 
   .menu__title {
@@ -33,7 +33,7 @@
   
   }
   .menu__title_burger {
-    color:var(--grey-3);
+    color:var(--font-3);
   }
   
   .menu__list_burger {
@@ -42,7 +42,7 @@
 
   }
   .menu__list_current-page{
-    color: #D84910;
+    color: var(--font-4);
   }
 
   @media screen and (max-width: 768px) {

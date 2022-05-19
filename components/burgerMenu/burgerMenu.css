@@ -4,7 +4,7 @@
 .burger{
     width: 100vw;
     height: 100vh;
-    background: var(--white-2);
+    background: var(--bg-2);
     position: fixed;
     /* display: none; */
     top: 0;
@@ -16,7 +16,7 @@
 
 .burger__header{
     height: 64px;
-    border-bottom: 1px solid var(--grey-2);
+    border-bottom: 1px solid var(--border-1);
     display: flex;
 
 }
@@ -25,7 +25,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid var(--grey-2);
+    border-bottom: 1px solid var(--border-1);
     padding: 28px 0 24px 0 ;
 }
 
