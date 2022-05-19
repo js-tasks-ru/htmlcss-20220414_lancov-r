@@ -43,25 +43,26 @@
     );
     background-size: 200% ;
     height: 20px;
+    animation: lnGradient linear infinite;
+
 }
 
 .skeleton__line_body-short {
   width: 40%;
-  animation: lnGradient 3s linear infinite;
-
+  animation-duration: 3s;
 }
 .skeleton__line_body-long {
   width: 58%;
-  animation: lnGradient 4s linear infinite;
+  animation-duration: 4s;
 }
 
 .skeleton__line_header-short {
   width: 97%;
-  animation: lnGradient 5s linear infinite;
+  animation-duration: 5s;
 }
 .skeleton__line_header-long {
   width: 89%;
-  animation: lnGradient 2s linear infinite;
+  animation-duration: 2s;
 
 }
 
