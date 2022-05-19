@@ -3,20 +3,7 @@
     height: 32px;
     color: var(--black);
  }
- 
- 
-.icon-day{
-  width: 24px;
-  height: 24px;
-  color: var(--black);
-}
-
-.icon-night{
-  width: 24px;
-  height: 24px;
-  color: var(--grey-3);
-}
-  
+   
 .logo {
     margin: 0px;
     text-decoration: none;
@@ -25,18 +12,3 @@
     gap: 8px;
   }
 
-.close-button{
-  width: 32px;
-  height: 32px;
-  background: var(--grey-2);
-  border-radius: 25px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.close-button__cross{
-  width: 24px;
-  height: 24px;
-  color: var(--black);
-}
