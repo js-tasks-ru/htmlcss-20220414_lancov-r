@@ -7,16 +7,16 @@
     display: flex;
     flex-direction: column;
     text-decoration: none;
-
+    padding: 32px;
 }
 
 .card__description{
-  height: 82px;
+  /* height: 82px; */
 }
 
 .card__preview{
-    width: 350px;
-    height: 285px;
+  width: 286px;
+  height: 253px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -72,6 +72,8 @@ color: var(--grey-4);
   .card{
     flex:  0 0 164px;
     height: 231px;
+    padding: 0;
+
   }
 
   .card__title{

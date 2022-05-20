@@ -4,11 +4,3 @@
     color: var(--black);
  }
    
-.logo {
-    margin: 0px;
-    text-decoration: none;
-    display: flex;
-    width: 112px;
-    gap: 8px;
-  }
-
