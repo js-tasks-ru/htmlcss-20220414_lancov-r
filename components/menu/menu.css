@@ -1,0 +1,54 @@
+.menu {
+    grid-column: 1/ 2;
+    width: 285px;
+  }
+  
+  .menu__section{
+    /* padding-bottom:16px ; */
+  }
+  .menu__section_burger{
+     border-bottom: 1px solid var(--grey-2);
+  }
+
+  .menu__title {
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 16px 0;
+  }
+  
+  .menu__list {
+    padding-left: 0;
+    list-style-type: none;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    cursor: pointer;
+  
+  }
+  .menu__title_burger {
+    color:var(--grey-3);
+  }
+  
+  .menu__list_burger {
+    font-size: 16px;
+    line-height: 24px;
+
+  }
+  .menu__list_current-page{
+    color: #D84910;
+  }
+
+  @media screen and (max-width: 768px) {
+    .menu {
+      display: none;
+    }
+
+  }
+  

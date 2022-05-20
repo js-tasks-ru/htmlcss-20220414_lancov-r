@@ -1,5 +1,24 @@
-.preview{
-    background: #F9FAFC;
-    height: 1036px;
+.preview {
+  background: var(--white-2);
+
+}
+
+.preview__inner {
+  padding: 68px 0;
+  flex-wrap: wrap;
+  justify-content: center;  	 
+
+  gap: 30px; 
+
+  display: none;
+
+}
+
+
+@media screen and (max-width: 768px) {
+  .preview__inner {
+    padding: 24px 0;
+    gap: 16px;
+  }
 
 }

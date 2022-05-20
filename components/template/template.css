@@ -1,0 +1,27 @@
+.template{
+  background-color: var(--white-2);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.template__main {
+  flex-grow: 1;
+  padding-bottom: 16px;
+
+}
+
+.template__inner {
+  display: grid;
+  grid-template-columns: 285px 1fr;
+  height: 100%;
+  
+ }
+
+
+@media screen and (max-width: 768px) {
+
+  .template__inner {
+    display: block;
+  }
+
+}

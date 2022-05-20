@@ -1,50 +1,90 @@
-.header{
-    background-color: var(--white); 
-    padding: 25px 0 77px;
-    color: var(--black);
-}
- 
-.header__title{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 50px;
-    line-height: 64px;
-    margin: 0px;
-    padding-top: 40px;
+.header {
+  color: var(--black);
 }
 
-.header__logo{
-    margin: 0px;
-    /* padding-left: 3px;  */
-    /* padding-top: 25px; */
-    /* padding-bottom: 40px; */
+.header__upper-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 0;
 }
 
-.header__logo-triangle{
-	width: 0;
-	height: 0;
-	border-bottom: 30px solid var(--black); 
-	border-right: 30px solid transparent;	
-    display: inline-block;
-
+.header__upper-nav-block {
+  display: flex;
+  align-items: center;
 }
 
-.header__logo-square{
-        width: 30px;
-        height: 30px;
-        background: var(--black);
-        display: inline-block;
+.header__upper-nav-block_theme{
+  justify-content: space-between;
+  width: 130px;
+  gap: 14px;
+}
 
+.header__title {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 64px;
+  margin: 0px;
+  padding-top: 9px;
+  padding-bottom: 40px;
+}
+
+.header__nav {
+  display: flex;
+  gap: 24px;
+
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+}
+
+.header__filler {
+  width: 32px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__icon-day{
+  width: 24px;
+  height: 24px;
+  color: var(--black);
+}
+
+.header__icon-night{
+  width: 24px;
+  height: 24px;
+  color: var(--grey-3);
+}
+
+@media screen and (max-width: 768px) {
+  .header__filler {
+    display: flex;
   }
 
-  .header__logo-circle{
-    width: 30px;
-    height: 30px;
-    background: var(--black);
-    -moz-border-radius: 50px;
-    -webkit-border-radius: 50px;
-    border-radius: 50px;
-    display: inline-block;
+  .header__nav {
+    display: none;
+  }
 
+  .header__upper-nav_inner {
+    padding: 17px 0;
+    background-color: var(--white-2);
+  }
+
+  .header__upper-nav_burger {
+    border-bottom: 1px solid var(--grey-2);
+    padding-bottom: 32px;
+  }
+  
+  .header__title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 38px;
+    margin: 0px;
+    padding-top: 9px;
+  }
 }
