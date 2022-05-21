@@ -6,7 +6,8 @@
     height: 100vh;
     background: var(--white-2);
     position: fixed;
-    /* display: none; */
+    visibility: hidden;
+ 
     top: 0;
     left: 0;
     transform: translateX(-100vw);
@@ -58,7 +59,7 @@
 @media screen and (max-width: 768px) {
 
     .burger__input:checked ~ .burger{
-        display: block;
+        visibility: visible;
         transform: none;
     }
     
