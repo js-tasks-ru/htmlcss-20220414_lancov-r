@@ -48,6 +48,18 @@
   align-items: center;
 }
 
+.header__icon-day{
+  width: 24px;
+  height: 24px;
+  color: var(--black);
+}
+
+.header__icon-night{
+  width: 24px;
+  height: 24px;
+  color: var(--grey-3);
+}
+
 @media screen and (max-width: 768px) {
   .header__filler {
     display: flex;

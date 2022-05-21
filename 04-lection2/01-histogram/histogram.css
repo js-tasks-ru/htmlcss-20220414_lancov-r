@@ -69,3 +69,22 @@
     background-color:  var(--blue);
     flex: 1 1 auto ;
 }
+
+.histogram:hover .histogram_chart-bar{
+    animation-duration: 500ms;
+    animation-name: expand;
+    transform-origin: bottom;
+}
+
+
+
+@keyframes expand {
+    from {
+        transform: scaleY(0);
+    }
+    70%{
+        transform: scaleY(1.3);    }
+    
+    to {
+        transform: scaleY(1);    }
+  }

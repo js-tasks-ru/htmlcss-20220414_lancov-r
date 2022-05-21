@@ -54,3 +54,9 @@
  .content__text_css{
     display: none;
  }
+
+ .content__avatar {
+   height: 160px;
+   width: 160px;
+       
+   }

@@ -8,15 +8,19 @@
 }
 
 .footer_inner {
+  background: transparent;
+}
+
+.footer__inner-title {
+  
   font-size: 12px;
   font-weight: 500;
   line-height: 18px;
   letter-spacing: 0.04em;
-  color: var(--font-3);
-  background: transparent;
-}
-.footer__inner-title {
+  color: var(--grey-3);
+
   margin-bottom: 56px;  
+
 }
 
 .footer__text {
