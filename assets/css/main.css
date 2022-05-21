@@ -36,11 +36,12 @@
     --secondary: var(--purple);
 
 
-    --bg-1: var(--white-1);
+    --bg-1: var(--white);
     --bg-2: var(--white-2);
     --border-1 : var(--grey-2);
     --border-2 : var(--black);
     --border-3 : var(--grey-4);
+    --border-4 : var(--grey-3);
     --font-1 : var(--black);
     --font-2 : var(--grey-4);
     --font-3 : var(--grey-3);
@@ -49,7 +50,7 @@
     --icon-1 : var(--black);
     --icon-2 : var(--grey-2);
     --icon-3 : var(--grey-3);
-
+    
 }
 
 html,body{
@@ -59,16 +60,17 @@ html,body{
 html[data-theme-dark]{
     --bg-1: #38444c;
     --bg-2: #2a2f31;
-    --border-1 : #576167;
-    --border-2 : #929ba1;
-    --border-3 : #697278;
+    --border-1 : #505b63;
+    --border-2 : #cfd4d7;
+    --border-3 : #737e86;
+    --border-4 : #9fa2a4;
     --font-1 : #f0f2f3;
     --font-2 : #cedbe3;
     --font-3 : #c8cdd0;
     --font-4 : var(--orange);
 
     --icon-1 : #f0f2f3;
-    --icon-2 : #94a6ae;
+    --icon-2 : #acbfc6;
     --icon-3 : #7a878c;
 }
 

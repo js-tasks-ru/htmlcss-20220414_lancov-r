@@ -51,13 +51,17 @@
 .header__icon-day{
   width: 24px;
   height: 24px;
-  color: var(--black);
+  color: var(--icon-1);
 }
 
 .header__icon-night{
   width: 24px;
   height: 24px;
-  color: var(--grey-3);
+  color: var(--icon-3);
+}
+
+.header__burger-menu{
+  cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {

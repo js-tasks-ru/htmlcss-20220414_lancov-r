@@ -21,7 +21,7 @@
   left: 2px;
   top: calc(50% - 24px / 2);
 
-  background: var(--grey-2);
+  background: var(--border-1);
   border-radius: 16px;
 }
 
@@ -30,8 +30,8 @@
   width: 52px;
   height: 28px;
 
-  background: var(--white);
-  border: 1px solid var(--grey-2);
+  background: var(--bg-1);
+  border: 1px solid var(--border-1);
   border-radius: 16px;
 }
 
@@ -39,7 +39,7 @@
 .toggle__input:checked ~ .burger .toggle__control-inner,
 .toggle__input:checked ~ .header .toggle__control-inner {
   left: 26px;
-  background: var(--white);
+  background: var(--bg-1);
 }
 
 
@@ -49,14 +49,14 @@
   border-color: var(--blue-2);
 }
 
-.toggle__input:checked ~ .header .icon-day,
-.toggle__input:checked ~ .burger .icon-day{
-  color: var(--grey-3);
+.toggle__input:checked ~ .header .header__icon-day,
+.toggle__input:checked ~ .burger .header__icon-day{
+  color: var(--border-1);
 }
 
-.toggle__input:checked ~ .header .icon-night ,
-.toggle__input:checked ~ .burger .icon-night {
-  color: var(--black);
+.toggle__input:checked ~ .header .header__icon-night ,
+.toggle__input:checked ~ .burger .header__icon-night {
+  color: var(--border-2);
 }
 
 .toggle__input:disabled ~ .header .toggle__control-inner,

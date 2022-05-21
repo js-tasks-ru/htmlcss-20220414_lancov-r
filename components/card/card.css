@@ -1,7 +1,5 @@
 .card{
     background-color: var(--bg-1);
-    /* width: 350px; */
-    /* height: 367px; */
     box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
     border-radius: 12px;
     display: flex;
@@ -11,7 +9,6 @@
 }
 
 .card__description{
-  /* height: 82px; */
 }
 
 .card__preview{
@@ -25,7 +22,6 @@
 
 .card__line{
     height: 1px;
-    /* background: var(--grey-2); */
     background: var(--border-2);
     border: 0;
     display: none;
@@ -39,7 +35,7 @@
   line-height: 25px;
   text-align: center;
 
-  color: var(-font-1);
+  color: var(--font-1);
 
   margin-bottom: 6px;
 }
@@ -96,7 +92,6 @@ color: var(--font-2);
     border-bottom: 1px solid var(--border-1);
     width: 164px;
     height: 164px;
-    /* box-sizing: border-box; */
   }
 
 }
