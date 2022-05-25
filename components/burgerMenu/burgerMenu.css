@@ -61,7 +61,7 @@
     @media screen and (max-width: 768px) {
         .burger__input:checked ~ .burger__body{
             visibility: visible;
-            transform: none;
+            transform: none;}
             
     
     }

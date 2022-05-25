@@ -60,9 +60,7 @@
   color: var(--grey-3);
 }
 
-.header__burger-input{
-  display: none;
-}
+
 
 @media screen and (max-width: 768px) {
   .header__filler {
@@ -92,10 +90,7 @@
     padding-top: 9px;
   }
 
-  .header__burger-input:checked ~ .header__burger{
-    visibility: visible;
-    transform: none;
 }
 
-}
+ 
 
