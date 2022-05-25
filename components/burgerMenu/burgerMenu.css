@@ -1,5 +1,5 @@
 
-.burger{
+.burger__body{
     width: 100vw;
     height: 100vh;
     background: var(--white-2);
@@ -54,3 +54,14 @@
     color: var(--black);
   }
 
+  .burger__input{
+    display: none;
+  }
+
+    @media screen and (max-width: 768px) {
+        .burger__input:checked ~ .burger__body{
+            visibility: visible;
+            transform: none;
+            
+    
+    }
