@@ -1,23 +1,27 @@
-.burger__input{
-    display: none;
-  }
-.burger{
+
+.burger__body{
     width: 100vw;
     height: 100vh;
     background: var(--white-2);
     position: fixed;
-    /* display: none; */
+    visibility: hidden;
+ 
     top: 0;
     left: 0;
     transform: translateX(-100vw);
-    transition: transform 200ms linear;
+    transition: transform 200ms linear, visibility 200ms linear;
 }
 
 
 .burger__header{
-    height: 64px;
+
     border-bottom: 1px solid var(--grey-2);
     display: flex;
+
+    justify-content: space-between;
+    padding: 17px 0;
+    background-color: var(--white-2);
+    padding-bottom: 32px;  
 
 }
 
@@ -55,11 +59,23 @@
     color: var(--black);
   }
 
-@media screen and (max-width: 768px) {
-
-    .burger__input:checked ~ .burger{
-        display: block;
-        transform: none;
-    }
-    
+  .burger__input{
+    display: none;
   }
+
+ 
+  .burger__filler {
+    width: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+    @media screen and (max-width: 768px) {
+        .burger__input:checked ~ .burger__body{
+            visibility: visible;
+            transform: none;}
+            
+    
+    }
+
