@@ -76,11 +76,7 @@
     background-color: var(--white-2);
   }
 
-  .header__upper-nav_burger {
-    border-bottom: 1px solid var(--grey-2);
-    padding-bottom: 32px;
-  }
-  
+
   .header__title {
     font-style: normal;
     font-weight: 400;
