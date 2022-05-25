@@ -40,18 +40,54 @@
   border: 1px solid var(--grey-2);
 }
 
-.checkbox_icon {
-  display: none;
-}
-.checkbox__input:checked ~ .checkbox__state .checkbox_icon {
-  display: inline-block;
+.checkbox__title {
+ font-family: Inter;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+ 
 }
 
-.checkbox__title {
-  font-family: Inter;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0em;
-  text-align: left;
+.checkbox__icon {
+    display: none;
+  }
+
+.checkbox__input:checked ~ .checkbox__state .checkbox__icon {
+    display: inline-block;
+  }
+  
+  
+.checkbox__animation{
+    width: 30px;
+    height: 30px;
+    border-radius: 10%;
+    visibility: hidden;
+  
+    background:  rgba(136, 136, 136,0.6);
+    position: absolute;
+    z-index: -1;
 }
+
+.checkbox__input:checked ~ .checkbox__state .checkbox__animation{
+    animation-duration: 350ms;
+    animation-name: expand;
+}
+
+@keyframes expand {
+    from {
+        visibility: unset;
+    }
+  
+    40%{
+         transform: scale(2,2);
+         opacity: 0.1;
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden;
+        transform: scale(0,0);
+    }
+  }

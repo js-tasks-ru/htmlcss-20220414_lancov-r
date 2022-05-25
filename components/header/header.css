@@ -64,6 +64,8 @@
   cursor: pointer;
 }
 
+
+
 @media screen and (max-width: 768px) {
   .header__filler {
     display: flex;
@@ -78,11 +80,6 @@
     background-color: var(--bg-2);
   }
 
-  .header__upper-nav_burger {
-    border-bottom: 1px solid var(--border-1);
-    padding-bottom: 32px;
-  }
-  
   .header__title {
     font-style: normal;
     font-weight: 400;
@@ -91,4 +88,8 @@
     margin: 0px;
     padding-top: 9px;
   }
+
 }
+
+ 
+
