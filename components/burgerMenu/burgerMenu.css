@@ -15,12 +15,12 @@
 
 .burger__header{
 
-    border-bottom: 1px solid var(--grey-2);
+    border-bottom: 1px solid var(--border-1 );
     display: flex;
 
     justify-content: space-between;
     padding: 17px 0;
-    background-color: var(--white-2);
+    background-color: var(--bg-2);
     padding-bottom: 32px;  
 
 }
