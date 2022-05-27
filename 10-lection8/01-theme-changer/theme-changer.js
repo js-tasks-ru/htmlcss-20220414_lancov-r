@@ -6,7 +6,7 @@ const themeChangers = [
     document.getElementById('theme-changer-2')
 ]; 
 
-function addThemeChangeListners(){
+function addThemeChangeListeners(){
     themeChangers.forEach(element => {
         element.addEventListener('change', (el) => {
             if(el.target.checked){
@@ -20,4 +20,4 @@ function addThemeChangeListners(){
         }); 
 })}
 
-addThemeChangeListners(themeChangers); 
+addThemeChangeListeners(themeChangers); 
