@@ -3,7 +3,7 @@
     flex-grow: 1;
     flex-direction: column;
   
-    background-color: var(--white);
+    background-color: var(--bg-1);
   
     box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
     border-radius: 12px;
@@ -16,7 +16,7 @@
     font-weight: 400;
     line-height: 38px;
     letter-spacing: 0em;
-    color: var(--grey-4);
+    color: var(--font-2);
 
  } 
 
@@ -29,7 +29,7 @@
  }
  .content__dividing{
     height: 1px;
-    background: var(--grey-2);
+    background: var(--border-1);
     border: 0 none;
  }
 
@@ -41,7 +41,7 @@
 .content__text{
     display: none;
     overflow-x: auto;
-
+   color: var(--font-2);
 }
 
 .content__text-scroller{

@@ -4,15 +4,16 @@
     <head>
         <link rel="stylesheet" href="./assets/css/main.css">
         <link rel="stylesheet" href="./06-lection4/01-avatar/avatar.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width,  initial-scale=1.0">
     </head>
     <body>
         <div class="page">
+
             <header class="header">
 
                 <div class="container">
                     <div class="header__upper-nav">
-                        
+
                         <div class="header__filler">
                           
                             <div class=" burger">
@@ -55,21 +56,24 @@
                                         <div class="burger__filler"></div>
                                         </div>
                             
+                                        
                                         <div class="burger__theme-toggler">
-                                        <input type="checkbox" class="toggle__input" id="burger-theme-toggle"/>
-                                        <label  for="burger-theme-toggle">
-                                            <div class="burger__toggler-label">Dark mode</div>
-                                        </label>
-                                        <label   for="burger-theme-toggle">
-                                            <div class="toggle__state">
-                                            <div class="toggle__control-outer">
-                                                <div class="toggle__control-inner"></div>
-                                            </div>
-                                            </div>
-                                        </label>
-                            
+                                            <label  for="theme-changer-1">
+                                                <div class="burger__toggler-label">Dark mode</div>
+                                            </label>
+
+                                            <div class="toggle"  >
+                                                <input type="checkbox" class="toggle__input" id="theme-changer-1"/>
+                                                <label  class="toggle__wrapper" for="theme-changer-1">
+                                                    <div class="toggle__state">
+                                                    <div class="toggle__control-outer">
+                                                        <div class="toggle__control-inner"></div>
+                                                    </div>
+                                                    </div>
+                                                </label>
+                                            </div>                         
                                         </div>
-                            
+
                                         <section class="menu__section menu__section_burger">
                                         <h4 class="menu__title menu__title_burger">Elements</h4>
                                         <ul class="menu__list menu__list_burger ">
@@ -120,20 +124,22 @@
                             <div class="header__upper-nav-block">Contact</div>
 
                             <div class="header__upper-nav-block header__upper-nav-block_theme">
-                                <input type="checkbox" class="toggle__input" id="theme-toggle" />
 
                                 <svg class="header__icon-day">
                                     <use href="/assets/icons/sprite.svg#day"></use>        
                                 </svg>
 
-                                <label for="theme-toggle">
-                                <div class="toggle__state">
-                                <div class="toggle__control-outer">
-                                    <div class="toggle__control-inner"></div>
-                                </div>
-                                </div>
-                                </label>
-                    
+                                <div class="toggle"  >
+                                    <input type="checkbox" class="toggle__input" id="theme-changer-2"/>
+                                    <label  class="toggle__wrapper" for="theme-changer-2">
+                                        <div class="toggle__state">
+                                        <div class="toggle__control-outer">
+                                            <div class="toggle__control-inner"></div>
+                                        </div>
+                                        </div>
+                                    </label>
+                                </div>                         
+        
                                 <svg class="header__icon-night">
                                     <use href="/assets/icons/sprite.svg#night"></use>        
                                 </svg>
@@ -144,6 +150,7 @@
                     <h1 class="header__title">Reusable component library</h1>
                 </div>
             </header>
+            
 
             <input type="radio" name="maintabs" class="tabs__input" id="all-tab" checked>
             <input type="radio" name="maintabs" class="tabs__input" id="elements-tab">
@@ -221,4 +228,6 @@
 
         </div>
     </body>
+    <script src="./10-lection8/01-theme-changer/theme-changer.js"></script>
+
 </html>

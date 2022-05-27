@@ -1,6 +1,23 @@
-const changer = document.getElementById('theme-changer');
+
 const html = document.documentElement;
 
-changer.addEventListener('change', function() {
-    html.toggleAttribute('data-theme-dark');
-});
+const themeChangers = [
+    document.getElementById('theme-changer-1'),
+    document.getElementById('theme-changer-2')
+]; 
+
+function addThemeChangeListeners(){
+    themeChangers.forEach(element => {
+        element.addEventListener('change', (el) => {
+            if(el.target.checked){
+                html.setAttribute('data-theme-dark',undefined);
+                themeChangers.forEach(themeChanger => themeChanger.checked = true)
+            }
+            else{
+                html.removeAttribute('data-theme-dark',undefined);
+                themeChangers.forEach(themeChanger => themeChanger.checked = false)
+            } ;
+        }); 
+})}
+
+addThemeChangeListeners(themeChangers); 
