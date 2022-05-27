@@ -1,11 +1,23 @@
-const changer1 = document.getElementById('theme-changer-1');
-const changer2 = document.getElementById('theme-changer-2');
+
 const html = document.documentElement;
 
-let dark_theme_state = () => {
-    html.toggleAttribute('data-theme-dark');
-     changer1.checked = html.getAttribute === null;
-     changer2.checked = html.getAttribute === null;
-}
-changer1.addEventListener('change', dark_theme_state );
-changer2.addEventListener('change', dark_theme_state );
+const themeChangers = [
+    document.getElementById('theme-changer-1'),
+    document.getElementById('theme-changer-2')
+]; 
+
+function addThemeChangeListners(){
+    themeChangers.forEach(element => {
+        element.addEventListener('change', (el) => {
+            if(el.target.checked){
+                html.setAttribute('data-theme-dark',undefined);
+                themeChangers.forEach(themeChanger => themeChanger.checked = true)
+            }
+            else{
+                html.removeAttribute('data-theme-dark',undefined);
+                themeChangers.forEach(themeChanger => themeChanger.checked = false)
+            } ;
+        }); 
+})}
+
+addThemeChangeListners(themeChangers); 
